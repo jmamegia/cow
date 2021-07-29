@@ -1,7 +1,7 @@
 import "./style.css";
 import { encode, decode } from "js-base64";
 import Split from "split-grid";
-
+import actionButtons from "./src/js/actionIcons";
 const $ = (el) => document.querySelector(el);
 Split({
   columnGutters: [
@@ -45,6 +45,7 @@ const init = () => {
     "srcdoc",
     generateDocument(cssDeco, jsDeco, htmlDeco)
   );
+  actionButtons();
 };
 
 const generateDocument = (css, js, html) => {
