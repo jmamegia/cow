@@ -1,4 +1,6 @@
 import "./style.css";
+import "./src/css/navCss.css";
+
 import { encode, decode } from "js-base64";
 import Split from "split-grid";
 import actionButtons from "./src/js/actionIcons";
