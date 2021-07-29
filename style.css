@@ -43,6 +43,30 @@ textarea {
   border: 1em solid #333;
 }
 
+#htmlForm {
+  background-image: url(/src/assets/img/icons8-html-5.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  background-blend-mode: soft-light;
+}
+
+#cssForm {
+  background-image: url(/src/assets/img/icons8-css3.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  background-blend-mode: soft-light;
+}
+
+#jsForm {
+  background-image: url(/src/assets/img/javascript-seeklogo.com.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  background-blend-mode: soft-light;
+}
+
 iframe {
   background: #f1f1f1;
   border: 0;
