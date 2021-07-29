@@ -23,7 +23,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 5px 1fr 5px 1fr;
   grid-template-rows: 2fr 5px 3fr;
-  height: 98vh;
+  height: 97vh;
   margin-top: 1vh;
   overflow: hidden;
 }
