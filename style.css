@@ -115,7 +115,7 @@ iframe {
   position: absolute;
   color: #f1f1f1;
   top: 7px;
-  opacity: 0.3;
+  opacity: 0.5;
   right: 40px;
   width: 10px;
   transition: opacity ease-in 1s;
