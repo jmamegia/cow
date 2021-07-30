@@ -28,9 +28,7 @@ Split({
 const init = () => {
   const { pathname } = window.location;
   const [rawHtml, rawCss, rawJs] = pathname.slice(1).split("%7C");
-  const css = $("#cssForm");
-  const js = $("#jsForm");
-  const html = $("#htmlForm");
+
   let htmlDeco;
   let jsDeco;
   let cssDeco;
@@ -40,9 +38,10 @@ const init = () => {
   cssEditor.setValue(cssDeco);
   jsEditor.setValue(jsDeco);
   htmlEditor.setValue(htmlDeco);
-  css.addEventListener("input", update);
-  js.addEventListener("input", update);
-  html.addEventListener("input", update);
+
+  jsEditor.on("change", update)
+  cssEditor.on("change", update)
+  htmlEditor.on("change", update)
   $("#webPrev").setAttribute(
     "srcdoc",
     generateDocument(cssDeco, jsDeco, htmlDeco)
