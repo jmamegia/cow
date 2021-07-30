@@ -1,5 +1,6 @@
 import "./style.css";
 import "./src/css/navCss.css";
+import {htmlEditor, cssEditor, jsEditor} from"./src/js/aceEditor"
 
 import { encode, decode } from "js-base64";
 import Split from "split-grid";
@@ -36,10 +37,9 @@ const init = () => {
   rawHtml ? (htmlDeco = decode(rawHtml)) : (htmlDeco = "");
   rawJs ? (jsDeco = decode(rawJs)) : (jsDeco = "");
   rawCss ? (cssDeco = decode(rawCss)) : (cssDeco = "");
-  css.value = cssDeco;
-  js.value = jsDeco;
-  html.value = htmlDeco;
-  console.log(htmlDeco);
+  cssEditor.setValue(cssDeco);
+  jsEditor.setValue(jsDeco);
+  htmlEditor.setValue(htmlDeco);
   css.addEventListener("input", update);
   js.addEventListener("input", update);
   html.addEventListener("input", update);
@@ -68,9 +68,9 @@ const generateDocument = (css, js, html) => {
 };
 
 function update() {
-  const css = $("#cssForm").value;
-  const js = $("#jsForm").value;
-  const html = $("#htmlForm").value;
+  const css = cssEditor.getValue();
+  const js = jsEditor.getValue();
+  const html = htmlEditor.getValue();
   const hashedCode = `${encode(html)}|${encode(css)}|${encode(js)}`;
   window.history.replaceState(null, null, `/${hashedCode}`);
   $("#webPrev").setAttribute("srcdoc", generateDocument(css, js, html));

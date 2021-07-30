@@ -7,6 +7,9 @@
       type="image/svg+xml"
       href="/src/assets/img/sacred-cow.svg"
     />
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/default.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coding On Web Browser</title>
   </head>
@@ -23,8 +26,8 @@
       </ul>
       <div class="grid">
         <div class="code-grid">
-          <textarea name="htmlForm" id="htmlForm" spellcheck="false"></textarea>
-          <div class="action-buttons" id="action-buttons-html">
+          <div id="htmlForm" class="textarea"></div>
+           <div class="action-buttons" id="action-buttons-html">
             <img
               class="resize"
               target="#htmlForm"
@@ -34,7 +37,7 @@
         </div>
         <div class="vertical-gutter-1"></div>
         <div class="code-grid">
-          <textarea name="cssForm" id="cssForm" spellcheck="false"></textarea>
+          <div id="cssForm" class="textarea"></div>
           <div class="action-buttons" id="action-buttons-css">
             <img
               class="resize"
@@ -45,7 +48,7 @@
         </div>
         <div class="vertical-gutter-2"></div>
         <div class="code-grid">
-          <textarea name="jsForm" id="jsForm" spellcheck="false"></textarea>
+          <div id="jsForm" class="textarea"></div>
           <div class="action-buttons" id="action-buttons-js">
             <img
               class="resize"
@@ -71,6 +74,9 @@
       Icons made by
       <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
     </div>
+    <script src="//ajaxorg.github.io/ace-builds/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
