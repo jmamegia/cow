@@ -1,0 +1,17 @@
+.action-buttons {
+  position: absolute;
+  top: 7px;
+  right: 30px;
+  width: 10px;
+  z-index: 1;
+}
+.icon:hover {
+  opacity: 1;
+}
+.icon {
+  width: 20px;
+  cursor: pointer;
+  margin-bottom: 3px;
+  opacity: 0.5;
+  transition: opacity ease-in 0.5s;
+}
