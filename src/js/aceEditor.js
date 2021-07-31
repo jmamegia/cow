@@ -12,13 +12,13 @@ cssEditor.setTheme("ace/theme/kr_theme");
 cssEditor.getSession().setMode("ace/mode/css");
 cssEditor.setFontSize(15);
 cssEditor.setHighlightActiveLine(false);
-htmlEditor.setShowPrintMargin(false);
+cssEditor.setShowPrintMargin(false);
 
 const jsEditor = ace.edit("jsForm");
 jsEditor.setTheme("ace/theme/dracula");
 jsEditor.getSession().setMode("ace/mode/javascript");
 jsEditor.setFontSize(15);
 jsEditor.setHighlightActiveLine(false);
-htmlEditor.setShowPrintMargin(false);
+jsEditor.setShowPrintMargin(false);
 
 export { htmlEditor, cssEditor, jsEditor };

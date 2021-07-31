@@ -10,11 +10,8 @@
 }
 
 .code-grid {
-  padding-left: 5px;
-  padding-right: 5px;
   background-color: #333;
   border-radius: 10px;
-  transition: sc;
   position: relative;
 }
 
@@ -53,7 +50,6 @@
   color: #f1f1f1;
   border-radius: 10px;
   box-sizing: border-box;
-  border: 1em solid #333;
 }
 
 #htmlForm {
