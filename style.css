@@ -26,6 +26,8 @@ body {
   height: 90vh;
   margin-top: 1vh;
   overflow: hidden;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 textarea:focus {
@@ -44,26 +46,31 @@ textarea:focus {
 }
 
 #htmlForm {
-  background-attachment: url(/src/assets/img/icons8-html-5.svg);
+  background-color: transparent;
+  background-image: url(/src/assets/img/icons8-html-5.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: right;
+  background-size: 5vh;
+  background-position: bottom right;
   background-blend-mode: lighten;
 }
 
 #cssForm {
+  background-color: transparent;
   background-image: url(/src/assets/img/icons8-css3.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: right;
+  background-size: 5vh;
+  background-position: bottom right;
   background-blend-mode: soft-light;
 }
 
 #jsForm {
+  background-color: transparent;
   background-image: url(/src/assets/img/javascript-seeklogo.com.svg);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
+  background-size: 5vh;
+  background-position: bottom right;
   background-blend-mode: soft-light;
 }
 
@@ -85,7 +92,8 @@ iframe {
 .code-grid {
   padding-left: 5px;
   padding-right: 5px;
-  background-color: #f1f1f1;
+  background-color: #333;
+  border-radius: 10px;
   transition: sc;
   position: relative;
 }
@@ -108,20 +116,25 @@ iframe {
   border-radius: 50%;
   background: #fff;
 }
-.action-buttons:hover {
-  opacity: 1;
-}
+
 .action-buttons {
   position: absolute;
-  color: #f1f1f1;
   top: 7px;
-  opacity: 0.5;
-  transition: opacity ease-in 0.5s;
-  right: 40px;
+  right: 30px;
   width: 10px;
-  cursor: pointer;
   z-index: 1;
 }
+.icon:hover {
+  opacity: 1;
+}
+.icon {
+  width: 20px;
+  cursor: pointer;
+  margin-bottom: 3px;
+  opacity: 0.5;
+  transition: opacity ease-in 0.5s;
+}
+
 .maximized {
   position: absolute;
   grid-area: 1 /1 / 1 / 6;
